@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Det's Xenotypes - Stoneborn</name>
+	<author>DetVisor</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>det.stoneborn</packageId>
+	<description>This mod expands on the several new xenotypes added by the Biotech DLC, adding the dwarf-like stoneborn, a race of burly and short-tempered miners.</description>
+</ModMetaData>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!--
+  <HediffDef ParentName="DiseaseBase">
+	<defName>Stoneskin</defName>
+    <label>stoneskin</label>
+    <labelNoun>stoneskin</labelNoun>
+    <description>test</description>
+	<isBad>false</isBad>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2500~5000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painOffset>-0.2</painOffset>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.5</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  -->
+  <HediffDef>
+    <defName>StonecallBuff</defName>
+    <label>stonecalled</label>
+    <description>This person's construction and mining speeds are boosted thanks to having used the stonecall ability.</description>
+    <stages>
+      <li>
+        <statOffsets>
+          <ConstructionSpeed>0.3</ConstructionSpeed>
+          <MiningSpeed>0.3</MiningSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <AbilityDef>
+    <defName>Stonecall</defName>
+    <label>stonecall</label>
+    <description>With a powerful warcall, raise the mining and construction speeds of the caster.</description>
+    <iconPath>Things/UI/StonecallGizmo</iconPath>
+	<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <cooldownTicksRange>950000</cooldownTicksRange><!-- 15 days -->
+    <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+    <jobDef>CastAbilityOnThing</jobDef>
+	<targetRequired>False</targetRequired>
+    <statBases>
+      <Ability_Duration>500</Ability_Duration>
+    </statBases>
+    <charges>1</charges>
+    <cooldownPerCharge>true</cooldownPerCharge>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <label>warcall</label>
+      <warmupTime>2</warmupTime>
+      <range>-1</range>
+      <drawAimPie>false</drawAimPie>      
+      <requireLineOfSight>false</requireLineOfSight>
+      <warmupEffecter>AnimalWarcall_Warmup</warmupEffecter>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+	<li Class="CompProperties_AbilityMustBeCapableOf">
+        <workTags>
+          <li>Mining</li>
+        </workTags>
+      </li>
+      <li Class = "CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>StonecallBuff</hediffDef>
+        <applicableToMechs>False</applicableToMechs>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+	  
+	  <!--
+	  <li Class="CompProperties_AbilityGiveInspiration">
+        <canTargetBaby>False</canTargetBaby>
+      </li>
+	  -->
+    </comps>
+  </AbilityDef>
+
+  
+</Defs>

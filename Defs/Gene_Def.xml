@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef ParentName="GeneHeadboneBase">
+    <defName>BushyEyebrows</defName>
+    <label>bushy eyebrows</label>
+    <description>Carriers of this gene have unnaturally thick eyebrows.</description>
+    <iconPath>Things/UI/EyebrowIcon</iconPath>
+    <graphicData>
+      <graphicPath>Things/Pawn/Male_Eyebrow</graphicPath>
+	  <graphicPathFemale>Things/Pawn/Female_Eyebrow</graphicPathFemale>
+      <colorType>Hair</colorType>
+    </graphicData>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>eyebrowed</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>eyebrows</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>Stonecall</defName>
+    <label>stonecall</label>
+    <description>Carriers of this gene can perform a stonecall, using a powerful scream to raise their endurance.</description>
+    <iconPath>Things/UI/StonecallGene</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <abilities>
+      <li>Stonecall</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>Stonecall</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-3</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>stonecaller</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>rock</symbol></li>
+        <li><symbol>stone</symbol></li>
+        <li><symbol>cry</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>caller</symbol></li>
+        <li><symbol>crier</symbol></li>
+        <li><symbol>hailer</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+</Defs>
