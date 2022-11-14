@@ -24,7 +24,7 @@
   <GeneDef>
     <defName>Stonecall</defName>
     <label>stonecall</label>
-    <description>Carriers of this gene can perform a stonecall, using a hidden secondary organ in their neck that functions like a speaker,to raise their construction and mining speeds.</description>
+    <description>Carriers of this gene have a special organ hidden near their vocal chords, that allows them to perform a loud and inspiring stonecall to buff their mining and construction speeds.</description>
     <iconPath>Things/UI/StonecallGene</iconPath>
     <displayCategory>Ability</displayCategory>
     <abilities>
