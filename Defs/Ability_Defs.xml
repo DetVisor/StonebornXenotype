@@ -64,7 +64,7 @@
       <range>-1</range>
       <drawAimPie>false</drawAimPie>      
       <requireLineOfSight>false</requireLineOfSight>
-      <warmupEffecter>AnimalWarcall_Warmup</warmupEffecter>
+      <warmupEffecter>Stonecall_Warmup</warmupEffecter>
       <targetParams>
         <canTargetSelf>True</canTargetSelf>
       </targetParams>
@@ -80,8 +80,10 @@
         <hediffDef>StonecallBuff</hediffDef>
         <applicableToMechs>False</applicableToMechs>
       </li>
-      <li Class="CompProperties_AbilityFleckOnTarget">
-        <fleckDef>PsycastPsychicEffect</fleckDef>
+      <li Class="CompProperties_AbilityEffecterOnTarget">
+        <effecterDef>Stonecall_Cast</effecterDef>
+        <maintainForTicks>60</maintainForTicks>
+        <scale>1.55</scale>
       </li>
 	  
 	  <!--
@@ -91,6 +93,8 @@
 	  -->
     </comps>
   </AbilityDef>
+  
+
 
   
 </Defs>

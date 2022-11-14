@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>Stone_Cast</defName>  
+    <context>MapOnly</context>  
+	<maxSimultaneous>1</maxSimultaneous> 	
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/Stone_Cast</clipPath>
+          </li>
+        </grains>		
+        <volumeRange>45~55</volumeRange>
+		<pitchRange>0.8~0.9</pitchRange>
+		<sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</Defs>

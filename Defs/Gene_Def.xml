@@ -24,7 +24,7 @@
   <GeneDef>
     <defName>Stonecall</defName>
     <label>stonecall</label>
-    <description>Carriers of this gene can perform a stonecall, using a powerful scream to raise their endurance.</description>
+    <description>Carriers of this gene can perform a stonecall, using a hidden secondary organ in their neck that functions like a speaker,to raise their construction and mining speeds.</description>
     <iconPath>Things/UI/StonecallGene</iconPath>
     <displayCategory>Ability</displayCategory>
     <abilities>

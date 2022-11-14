@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <EffecterDef>
+    <defName>Stonecall_Cast</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        <soundDef>Stone_Cast</soundDef>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_StonecallCast</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_StonecallDistortion</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+  
+    <EffecterDef>
+    <defName>Stonecall_Warmup</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        <soundDef>AnimalWarcall_Warmup</soundDef>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_StonecallWarmup</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_StonecallDistortion</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+  
+    <ThingDef ParentName="MoteBase">
+    <defName>Mote_StonecallDistortion</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.1</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>0.3</solidTime>
+      <growthRate>12</growthRate>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MotePsychicWarmupNeuroquake</shaderType>
+      <texPath>Things/Mote/MoteHellfireCannon_HeatWaveDistortion</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.3</_distortionIntensity>
+        <_brightnessMultiplier>1.3</_brightnessMultiplier>
+        <_distortionTint>(0, 0.15, 0, 0)</_distortionTint>
+        <_pulseSpeed>1</_pulseSpeed>
+      </shaderParameters>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_StonecallCast</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverheadLow</altitudeLayer>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>0.3</fadeOutTime>
+      <solidTime>0.12</solidTime>
+      <growthRate>3.5</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/RadiationDistortion_A</texPath>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <color>(0.32, 0.87, 0.25, 1)</color>
+      <shaderType>MoteMultiplyAddCircularGrayscale</shaderType>
+      <shaderParameters>
+        <_MultiplyTex>/Things/Mote/RadiationDistortion_B</_MultiplyTex>
+        <_texAScale>0.3</_texAScale>
+        <_texBScale>0.3</_texBScale>
+        <_texAScrollSpeed>0.8</_texAScrollSpeed>
+        <_texBScrollSpeed>-0.4</_texBScrollSpeed>
+        <_texAScaleDist>0.5</_texAScaleDist>
+        <_DistortionScale>0.6</_DistortionScale>
+        <_Intensity>9</_Intensity>
+      </shaderParameters>
+      <drawSize>(2.5, 2.5)</drawSize>
+    </graphicData>
+  </ThingDef>
+  
+    <ThingDef ParentName="MoteBase">
+    <defName>Mote_StonecallWarmup</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.08</fadeInTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <solidTime>1.25</solidTime>
+      <growthRate>-0.3</growthRate>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_MoteWithAgeSecs</graphicClass>
+      <shaderType>MotePsychicWarmupNeuroquake</shaderType>
+      <texPath>Things/Mote/MoteHellfireCannon_HeatWaveDistortion</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.2</_distortionIntensity>
+        <_brightnessMultiplier>1.3</_brightnessMultiplier>
+        <_distortionTint>(0, 0.15, 0, 0)</_distortionTint>
+        <_pulseSpeed>0</_pulseSpeed>
+      </shaderParameters>
+      <drawSize>3</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  
+</Defs>
