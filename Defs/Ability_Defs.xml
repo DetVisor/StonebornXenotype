@@ -28,6 +28,7 @@
   </HediffDef>
   -->
   <HediffDef>
+    <hediffClass>HediffWithComps</hediffClass>
     <defName>StonecallBuff</defName>
     <label>stonecalled</label>
     <description>This person's construction and mining speeds are boosted thanks to having used the stonecall ability.</description>
@@ -39,6 +40,12 @@
         </statOffsets>
       </li>
     </stages>
+	<comps>
+	  <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>35000</disappearsAfterTicks><!--How long the buffs last-->
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+	</comps>
   </HediffDef>
   
   <AbilityDef>
@@ -48,7 +55,7 @@
     <iconPath>Things/UI/StonecallGizmo</iconPath>
 	<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 	<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-    <cooldownTicksRange>950000</cooldownTicksRange><!-- 15 days -->
+    <cooldownTicksRange>360000</cooldownTicksRange><!--The cooldown of the ability -->
     <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
     <jobDef>CastAbilityOnThing</jobDef>
 	<targetRequired>False</targetRequired>
