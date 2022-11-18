@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
- <FactionDef ParentName="OutlanderRoughBase">
+ <FactionDef ParentName="OutlanderFactionBase">
     <defName>OutlanderRoughStoneborn</defName>
     <label>rough stoneborn union</label>
     <description>A loose union of stubborn stoneborn townships. They're willing to make friends, even with lightdwellers, but they're also ready to toss a bomb and gnaw human gristle when it suits them. Treat them with respect and they'll offer an hand to an ally in need. Turn against them and the last thing you hear might be a triumphant battle warcry.</description>

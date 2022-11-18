@@ -52,4 +52,61 @@
     </symbolPack>
   </GeneDef>
   
+  <GeneDef>
+    <defName>LifespanLong</defName>
+    <label>Long lifespan</label>
+    <labelShortAdj>Long lifespan</labelShortAdj>
+    <description>Carriers of this gene have increased lifespans.</description>
+    <iconPath>Things/UI/LongLifespan</iconPath>
+    <displayOrderInCategory>30</displayOrderInCategory>
+    <statFactors>
+      <LifespanFactor>1.5</LifespanFactor>
+    </statFactors>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>Undergrounder</defName>
+    <label>Undergrounder</label>
+    <labelShortAdj>Undergrounder</labelShortAdj>
+    <description>Carriers of this gene are more used to living in caves and under mountains.</description>
+    <iconPath>Things/UI/Undergrounder</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <forcedTraits>
+      <li>
+        <def>Undergrounder</def>
+      </li>
+    </forcedTraits>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>+1</biostatMet>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneAggressionBase">
+    <defName>Aggression_Irascible</defName>
+    <label>irascible</label>
+    <description>Carriers of this gene are easy to anger. They are a bit more likely to start fights. When they have mental breaks, they are more likely to choose an aggressive kind of break.</description>
+    <iconPath>Things/UI/Irascible</iconPath>
+    <socialFightChanceFactor>0.4</socialFightChanceFactor>
+    <aggroMentalBreakSelectionChanceFactor>0.3</aggroMentalBreakSelectionChanceFactor>
+    <prisonBreakMTBFactor>0.4</prisonBreakMTBFactor>
+    <displayOrderInCategory>10</displayOrderInCategory>
+    <biostatMet>1</biostatMet>
+    <exclusionTags>
+      <li>Aggressive</li>
+    </exclusionTags>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>aggro</symbol></li>
+        <li><symbol>snob</symbol></li>
+        <li><symbol>angry</symbol></li>
+        <li><symbol>destro</symbol></li>
+        <li><symbol>barb</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>fighter</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
 </Defs>

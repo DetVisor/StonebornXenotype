@@ -15,10 +15,10 @@
 	  <li>Nearsighted</li>
 	  <li>MaxTemp_SmallDecrease</li>
 	  <li>Beard_Always</li>
-	  <li>AptitudePoor_Social</li>
-	  <li>AptitudeStrong_Mining</li>
+	  <li>AptitudeTerrible_Social</li>
 	  <li>AptitudePoor_Animals</li>
-	  <li>AptitudePoor_Plants</li>
+	  <li>AptitudeStrong_Mining</li>
+	  <li>AptitudeStrong_Construction</li>
 	  <li>AptitudeRemarkable_Crafting</li>
       <li>Body_Fat</li>
 	  <li>Body_Standard</li>
@@ -26,10 +26,11 @@
 	  <li>PsychicAbility_Deaf</li>
 	  <li>Robust</li>
 	  <li>Libido_Low</li>
-	  <li>WoundHealing_Slow</li>
-	  <li>Immunity_Strong</li>
 	  <li>BushyEyebrows</li>
 	  <li>Stonecall</li>
+	  <li>LifespanLong</li>
+	  <li>Undergrounder</li>
+	  <li>Aggression_Irascible</li>
     </genes>
   </XenotypeDef>
 
