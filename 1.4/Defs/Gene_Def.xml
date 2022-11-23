@@ -89,7 +89,7 @@
     <iconPath>Things/UI/Irascible</iconPath>
     <socialFightChanceFactor>1.4</socialFightChanceFactor>
     <aggroMentalBreakSelectionChanceFactor>1.4</aggroMentalBreakSelectionChanceFactor>
-    <prisonBreakMTBFactor>1.4</prisonBreakMTBFactor>
+    <prisonBreakMTBFactor>0.8</prisonBreakMTBFactor>
     <displayOrderInCategory>10</displayOrderInCategory>
     <biostatMet>1</biostatMet>
     <exclusionTags>
