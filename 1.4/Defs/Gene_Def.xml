@@ -109,4 +109,31 @@
     </symbolPack>
   </GeneDef>
   
+  	<GeneDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" >
+		<defName>SmallBuild</defName>
+		<label>small build</label>
+		<description>Carriers of this gene are a smaller size than usual.</description>
+		<iconPath>Things/UI/SmallBody</iconPath>
+		<exclusionTags>
+			<li>AG_BodySize</li>
+		</exclusionTags>
+		<statFactors>
+			<Mass>0.90</Mass>
+			<MeatAmount>0.75</MeatAmount>
+			<LeatherAmount>0.75</LeatherAmount>
+		
+		</statFactors>
+		<displayOrderInCategory>0</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>+1</biostatMet>
+		
+		<selectionWeight>0</selectionWeight>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<bodyScaleFactor>(0.85,0.85)</bodyScaleFactor>
+				<headScaleFactor>(0.85,0.85)</headScaleFactor>
+			</li>
+		</modExtensions>
+	</GeneDef>
+  
 </Defs>
