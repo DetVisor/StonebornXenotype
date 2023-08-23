@@ -5,6 +5,13 @@
 	<supportedVersions>
 		<li>1.4</li>
 	</supportedVersions>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>brrainz.harmony</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	</loadAfter>
 	<packageId>det.stoneborn</packageId>
 	<description>This mod expands on the several new xenotypes added by the Biotech DLC, adding the dwarf-like stoneborn, a race of burly and short-tempered miners.</description>
 </ModMetaData>

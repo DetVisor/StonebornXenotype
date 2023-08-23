@@ -8,6 +8,7 @@
     <descriptionShort>After the hardy, grayskinned dirtmoles, came the stoneborn. Ever-bearded and short, they mine and forge minerals with a passion few can top, and are able to raise a bastion or core a mountain in a manner of days. Their relationship with rocks and caves comes at the detriment of agriculture, though. And coming from a culture where indecision can lead to death by tunnel collapse, their social interactions are seen as snobbish and rude.</descriptionShort>
     <iconPath>Things/UI/XenoIcon</iconPath>
     <inheritable>true</inheritable>
+	<nameMaker>NamerPersonStoneborn</nameMaker>
     <chanceToUseNameMaker>1</chanceToUseNameMaker>
     <genes>
 	  <li>MoveSpeed_Slow</li>
@@ -32,6 +33,7 @@
 	  <li>Undergrounder</li>
 	  <li>Aggression_Irascible</li>
 	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">SmallBuild</li>
+	  <li MayRequire="det.sbdelights">AddictionResistant_SD_Ale</li>
     </genes>
   </XenotypeDef>
 
