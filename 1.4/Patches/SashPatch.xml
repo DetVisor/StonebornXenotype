@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[@Name="Apparel_Sash"]/apparel/layers</xpath>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_Sash"]/apparel</xpath>
+		<value>
+			<layers>
+				<li>Shell</li>
+			</layers>
+		</value>
+	</Operation>
+	
+	
+</Patch> 
