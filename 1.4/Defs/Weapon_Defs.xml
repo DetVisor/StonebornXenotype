@@ -1,24 +1,159 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <!-- Ancestral weapons -->
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>DV_Bullet_Snapshot</defName>
+    <label>snapshot ball</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Bullet_Snapshot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>22</damageAmountBase>
+      <stoppingPower>1.2</stoppingPower>
+      <speed>60</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>DV_Gun_Snapshot</defName>
+    <label>snapshot</label>
+    <description>A beautifully intricate union of ancient flintlock mechanisms and modern weapon design, and a common sidearm of any noble dwarf. This pistol is both a work of art and an efficient weapon. \n\nAs an ancestral weapon, none beside the stoneborn have the skill to create it, and it must be bought, stolen or acquired from a quest.</description>
+    <possessionCount>1</possessionCount>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/Snapshot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <soundInteract>Interact_Revolver</soundInteract>
+    <statBases>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>1.6</Mass>
+      <AccuracyTouch>0.72</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.40</AccuracyLong>
+      <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+    </statBases>
+    <weaponTags>
+      <li>DwarfRangedRoyal</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedLight</li>
+    </weaponClasses>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>400</displayPriority>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>DV_Bullet_Snapshot</defaultProjectile>
+        <warmupTime>0.9</warmupTime>
+        <range>28.9</range>
+        <soundCast>Shot_Revolver</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>DV_MeleeWeapon_BulwarkBreaker</defName>
+    <label>bulwark breaker</label>
+    <description>A stunningly well made, robust, and heavy hammer, decorated with the head of a ram. As the very icon of craftdwarfship, it makes for a fine display piece and a powerful blunt weapon. \n\nAs an ancestral weapon, none beside the stoneborn have the skill to create it, and it must be bought, stolen or acquired from a quest.</description>
+    <techLevel>Medieval</techLevel>
+    <costStuffCount>175</costStuffCount>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>7.3</Mass>
+    </statBases>
+    <recipeMaker IsNull="True" />
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <weaponTags>
+      <li>DwarfMeleeRoyal</li>
+      <li>BulwarkBreaker</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Demolish</li>
+          <li>Blunt</li>
+        </capacities>
+        <power>32</power>
+        <cooldownTime>3.2</cooldownTime>
+        <armorPenetration>0.2</armorPenetration>
+      </li>
+    </tools>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/BulwarkBreaker</texPath>
+      <drawSize>1.2</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>DV_MeleeWeapon_AxeStaff</defName>
     <label>axe staff</label>
-    <description>An advanced form of one of mankind's oldest weapons, the war axe is a short blade attached to a shaft. The simple, ancient design concentrates cutting power generated from strong overhand swings.</description>
+    <description>A shiny and finely forged staff decorated with the shape of an anvil, which exudes authorithy. Although initially unassuming, the bearded axe blade can prove to be quite the effective weapon in close combat. \n\nAs an ancestral weapon, none beside the stoneborn have the skill to create it, and it must be bought, stolen or acquired from a quest.</description>
     <techLevel>Industrial</techLevel>
     <costStuffCount>120</costStuffCount>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
     <statBases>
       <WorkToMake>15500</WorkToMake>
       <Mass>2.5</Mass>
     </statBases>
-    <recipeMaker>
-      <researchPrerequisite>Smithing</researchPrerequisite>
-      <skillRequirements>
-        <Crafting>10</Crafting>
-      </skillRequirements>
-      <displayPriority>430</displayPriority>
-    </recipeMaker>
+    <recipeMaker IsNull="True" />
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
@@ -407,89 +542,6 @@
           <stoppingPower>1.5</stoppingPower>
           <speed>110</speed>
         </projectile>
-      </ThingDef>
-
-      <ThingDef ParentName="BaseBullet">
-        <defName>DV_Bullet_Snapshot</defName>
-        <label>snapshot ball</label>
-        <graphicData>
-          <texPath>Things/Projectiles/Bullet_Snapshot</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-          <damageDef>Bullet</damageDef>
-          <damageAmountBase>22</damageAmountBase>
-          <stoppingPower>1.2</stoppingPower>
-          <speed>60</speed>
-        </projectile>
-      </ThingDef>
-      <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>DV_Gun_Snapshot</defName>
-        <label>snapshot</label>
-        <description>An ancient pattern double-action revolver. It's not very powerful, but has a decent range for a pistol and is quick on the draw.</description>
-        <possessionCount>1</possessionCount>
-        <graphicData>
-          <texPath>Things/Item/Equipment/WeaponRanged/Snapshot</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <uiIconScale>1.4</uiIconScale>
-        <soundInteract>Interact_Revolver</soundInteract>
-        <statBases>
-          <WorkToMake>7000</WorkToMake>
-          <Mass>1.6</Mass>
-          <AccuracyTouch>0.72</AccuracyTouch>
-          <AccuracyShort>0.85</AccuracyShort>
-          <AccuracyMedium>0.65</AccuracyMedium>
-          <AccuracyLong>0.40</AccuracyLong>
-          <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
-        </statBases>
-        <weaponTags>
-          <li>DwarfRangedRoyal</li>
-        </weaponTags>
-        <weaponClasses>
-          <li>RangedLight</li>
-        </weaponClasses>
-        <costList>
-          <Steel>60</Steel>
-          <ComponentIndustrial>8</ComponentIndustrial>
-        </costList>
-        <recipeMaker>
-          <skillRequirements>
-            <Crafting>8</Crafting>
-          </skillRequirements>
-          <displayPriority>400</displayPriority>
-        </recipeMaker>
-        <verbs>
-          <li>
-            <verbClass>Verb_Shoot</verbClass>
-            <hasStandardCommand>true</hasStandardCommand>
-            <defaultProjectile>DV_Bullet_Snapshot</defaultProjectile>
-            <warmupTime>0.9</warmupTime>
-            <range>28.9</range>
-            <soundCast>Shot_Revolver</soundCast>
-            <soundCastTail>GunTail_Light</soundCastTail>
-            <muzzleFlashScale>9</muzzleFlashScale>
-          </li>
-        </verbs>
-        <tools>
-          <li>
-            <label>grip</label>
-            <capacities>
-              <li>Blunt</li>
-            </capacities>
-            <power>9</power>
-            <cooldownTime>2</cooldownTime>
-          </li>
-          <li>
-            <label>barrel</label>
-            <capacities>
-              <li>Blunt</li>
-              <li>Poke</li>
-            </capacities>
-            <power>11</power>
-            <cooldownTime>2</cooldownTime>
-          </li>
-        </tools>
       </ThingDef>
 
       <ThingDef ParentName="BaseHumanMakeableGun">

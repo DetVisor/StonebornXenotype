@@ -7,6 +7,7 @@
         <invNutrition>3.2</invNutrition>
         <chemicalAddictionChance>0.5</chemicalAddictionChance>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>	
+        <chronologicalAgeRange>100~500</chronologicalAgeRange>
         <xenotypeSet>
           <xenotypeChances>
             <Stoneborn>999</Stoneborn>
@@ -313,12 +314,43 @@
         <skills>
           <li>
             <skill>Melee</skill>
-            <range>9~15</range>
+            <range>7~11</range>
           </li>
         </skills>
         <initialWillRange>3~5</initialWillRange>
         <initialResistanceRange>25~30</initialResistanceRange>
       </PawnKindDef>
+
+     <!-- Aegisbreaker -->
+
+     <PawnKindDef ParentName="StonebornSoldierBase">
+      <defName>Stoneborn_Aegisbreaker</defName>
+      <label>aegisbreaker</label>
+      <maxGenerationAge>50</maxGenerationAge>
+      <combatPower>120</combatPower>
+      <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+      <weaponTags Inherit="False">
+        <li>BulwarkBreaker</li>
+      </weaponTags>
+      <apparelRequired Inherit="False">
+        <li>Apparel_PowerArmor</li>
+        <li>Apparel_ShieldBelt</li>
+      </apparelRequired>
+      <apparelColor>(60,60,60)</apparelColor>
+      <apparelTags Inherit="False" />
+      <techHediffsTags>
+        <li>Advanced</li>
+        <li>ImplantEmpireCommon</li>
+      </techHediffsTags>
+      <skills>
+        <li>
+          <skill>Melee</skill>
+          <range>11~18</range>
+        </li>
+      </skills>
+      <initialWillRange>3~5</initialWillRange>
+      <initialResistanceRange>25~30</initialResistanceRange>
+    </PawnKindDef>
     
       <!-- Royals -->
     
@@ -379,6 +411,55 @@
         </disallowedTraits>
       </PawnKindDef>
 
+      <PawnKindDef ParentName="NobilityStonebornBase">
+        <defName>Stoneborn_Feastfather</defName>
+        <label>feastfather</label>
+        <factionLeader>false</factionLeader>
+        <weaponTags>
+          <li>UltratechMelee</li>
+          <li>DwarfMeleeRoyal</li>
+          <li>DwarfRangedRoyal</li>
+        </weaponTags>
+        <specificApparelRequirements>
+          <li>
+            <bodyPartGroup>UpperHead</bodyPartGroup>
+            <requiredTag>DwarfRoyalTier1</requiredTag>
+            <stuff>Silver</stuff>
+          </li>
+          <li>
+            <bodyPartGroup>Torso</bodyPartGroup>
+            <apparelLayer>Shell</apparelLayer>
+            <requiredTag>DwarfRoyal</requiredTag>
+            <color>(108, 78, 55)</color>
+          </li>
+          <li>
+            <bodyPartGroup>Torso</bodyPartGroup>
+            <apparelLayer>Middle</apparelLayer>
+            <requiredTag>RoyalTier5</requiredTag>
+            <color>(138, 51, 36)</color>
+          </li>
+          <li>
+            <bodyPartGroup>Torso</bodyPartGroup>
+            <apparelLayer>OnSkin</apparelLayer>
+            <requiredTag>RoyalTier2</requiredTag>
+            <color>(138, 51, 36)</color>
+          </li>
+          <li>
+            <bodyPartGroup>Torso</bodyPartGroup>
+            <stuff>Hyperweave</stuff>
+          </li>
+          <li>
+            <bodyPartGroup>Legs</bodyPartGroup>
+            <stuff>Hyperweave</stuff>
+          </li>
+        </specificApparelRequirements>
+        <techHediffsTags>
+          <li>Advanced</li>
+          <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>25~30</initialResistanceRange>
+      </PawnKindDef>
       <PawnKindDef ParentName="NobilityStonebornBase">
         <defName>Stoneborn_Underlord</defName>
         <label>underlord</label>
