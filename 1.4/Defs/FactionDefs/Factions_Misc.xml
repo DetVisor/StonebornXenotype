@@ -57,7 +57,7 @@
     </structureMemeWeights>
 
     <modExtensions>
-      <li Class="KCSG.CustomGenOption">
+      <li MayRequire="det.stonebornfaction" Class="KCSG.CustomGenOption">
 
         <fullClear>true</fullClear>     
         <preventBridgeable>true</preventBridgeable>
