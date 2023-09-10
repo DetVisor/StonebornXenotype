@@ -69,7 +69,7 @@
     <defName>LifespanLong</defName>
     <label>Long lifespan</label>
     <labelShortAdj>Long lifespan</labelShortAdj>
-    <description>Carriers of this gene have increased lifespans.</description>
+    <description>Carriers of this gene life unusually long.</description>
     <iconPath>Things/UI/LongLifespan</iconPath>
     <displayOrderInCategory>30</displayOrderInCategory>
     <statFactors>
@@ -83,7 +83,7 @@
     <defName>Undergrounder</defName>
     <label>Undergrounder</label>
     <labelShortAdj>Undergrounder</labelShortAdj>
-    <description>Carriers of this gene are more used to living in caves and under mountains.</description>
+    <description>Carriers of this gene are more accustomed to dwelling in caves and under mountains.</description>
     <iconPath>Things/UI/Undergrounder</iconPath>
     <displayOrderInCategory>1</displayOrderInCategory>
     <forcedTraits>
@@ -98,7 +98,7 @@
   <GeneDef ParentName="GeneAggressionBase">
     <defName>Aggression_Irascible</defName>
     <label>irascible</label>
-    <description>Carriers of this gene are easy to anger. They are a bit more likely to start fights. When they have mental breaks, they are more likely to choose an aggressive kind of break.</description>
+    <description>Carriers of this gene are stubborn and rude. They are a bit more likely to start fights over nothing. When they have mental breaks, they are more likely to choose an aggressive kind of break.</description>
     <iconPath>Things/UI/Irascible</iconPath>
     <socialFightChanceFactor>1.4</socialFightChanceFactor>
     <aggroMentalBreakSelectionChanceFactor>1.2</aggroMentalBreakSelectionChanceFactor>
@@ -125,17 +125,18 @@
   	<GeneDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" >
 		<defName>SmallBuild</defName>
 		<label>dwarfism</label>
-		<description>Carriers of this gene are shorter than usual.</description>
+		<description>Carriers of this gene are afflicted by dwarfism and are shorter and stockier than most.</description>
 		<iconPath>Things/UI/SmallBody</iconPath>
 		<exclusionTags>
 			<li>AG_BodySize</li>
 		</exclusionTags>
+    
 		<statFactors>
 			<Mass>0.90</Mass>
 			<MeatAmount>0.90</MeatAmount>
 			<LeatherAmount>0.90</LeatherAmount>
-		
 		</statFactors>
+
 		<displayOrderInCategory>0</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>0</biostatMet>
