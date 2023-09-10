@@ -6,9 +6,19 @@
     <label>bushy eyebrows</label>
     <description>Carriers of this gene have unnaturally thick eyebrows.</description>
     <iconPath>Things/UI/EyebrowIcon</iconPath>
+    <forcedHeadTypes>
+      <li>Dwarf_AverageNormal</li>
+    </forcedHeadTypes>
     <graphicData>
-      <graphicPath>Things/Pawn/Male_Eyebrow</graphicPath>
-	  <graphicPathFemale>Things/Pawn/Female_Eyebrow</graphicPathFemale>
+      <graphicPaths>
+       <li>Things/Pawn/Male_Eyebrow</li>
+       <li>Things/Pawn/Male_Eyebrow1</li>
+       <li>Things/Pawn/Male_Eyebrow2</li>
+       <li>Things/Pawn/Male_Eyebrow3</li>
+       <li>Things/Pawn/Male_Eyebrow4</li>
+       <li>Things/Pawn/Male_Eyebrow5</li>
+       <li>Things/Pawn/Male_Eyebrow6</li>
+      </graphicPaths>
       <colorType>Hair</colorType>
       <visibleNorth>false</visibleNorth>
       <layer>PostSkin</layer>
@@ -82,7 +92,7 @@
       </li>
     </forcedTraits>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>+1</biostatMet>
+    <biostatMet>0</biostatMet>
   </GeneDef>
   
   <GeneDef ParentName="GeneAggressionBase">
@@ -91,7 +101,7 @@
     <description>Carriers of this gene are easy to anger. They are a bit more likely to start fights. When they have mental breaks, they are more likely to choose an aggressive kind of break.</description>
     <iconPath>Things/UI/Irascible</iconPath>
     <socialFightChanceFactor>1.4</socialFightChanceFactor>
-    <aggroMentalBreakSelectionChanceFactor>1.4</aggroMentalBreakSelectionChanceFactor>
+    <aggroMentalBreakSelectionChanceFactor>1.2</aggroMentalBreakSelectionChanceFactor>
     <prisonBreakMTBFactor>0.8</prisonBreakMTBFactor>
     <displayOrderInCategory>10</displayOrderInCategory>
     <biostatMet>1</biostatMet>
@@ -128,7 +138,7 @@
 		</statFactors>
 		<displayOrderInCategory>0</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
-		<biostatMet>+1</biostatMet>
+		<biostatMet>0</biostatMet>
 		
 		<selectionWeight>0</selectionWeight>
 		<modExtensions>
