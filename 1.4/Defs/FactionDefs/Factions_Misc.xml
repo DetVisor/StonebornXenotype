@@ -15,7 +15,20 @@
     <pawnSingular>dwarf</pawnSingular>
     <pawnsPlural>dwarves</pawnsPlural>
     <leaderTitle>underlord</leaderTitle>
-    <allowedCultures><li>Rustican</li><li>Astropolitan</li></allowedCultures>
+    <techLevel>Ultra</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>DwarfCommon</li>
+          <li>Offworld</li>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <allowedCultures>
+      <li>Rustican</li>
+      <li>Grottalik</li>
+    </allowedCultures>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <Stoneborn>100</Stoneborn>

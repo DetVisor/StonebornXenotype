@@ -77,11 +77,6 @@
       </targetParams>
     </verbProperties>
     <comps>
-	<li Class="CompProperties_AbilityMustBeCapableOf">
-        <workTags>
-          <li>Mining</li>
-        </workTags>
-      </li>
       <li Class = "CompProperties_AbilityGiveHediff">
         <compClass>CompAbilityEffect_GiveHediff</compClass>
         <hediffDef>StonecallBuff</hediffDef>

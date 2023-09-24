@@ -3,7 +3,11 @@
 
 <HeadTypeDef ParentName="AverageBase">
     <defName>Dwarf_AverageNormal</defName>
-    <graphicPath>Things/Pawn/Heads/Dwarf_Average_Normal</graphicPath>
+    <randomChosen>false</randomChosen>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Dwarf_Average_Normal</graphicPath>
     <gender>None</gender>
+    <requiredGenes>
+        <li>BushyEyebrows</li>
+    </requiredGenes>
 </HeadTypeDef>
 </Defs>
