@@ -27,7 +27,7 @@
     </backstoryFilters>
     <allowedCultures>
       <li>Rustican</li>
-      <li>Grottalik</li>
+      <li MayRequire="det.stonebornfaction">Grottalik</li>
     </allowedCultures>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
