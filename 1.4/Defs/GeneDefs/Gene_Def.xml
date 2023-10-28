@@ -41,10 +41,10 @@
     <iconPath>Things/UI/StonecallGene</iconPath>
     <displayCategory>Ability</displayCategory>
     <abilities>
-      <li>Stonecall</li>
+      <li>DV_Stonecall</li>
     </abilities>
     <descriptionHyperlinks>
-      <AbilityDef>Stonecall</AbilityDef>
+      <AbilityDef>DV_Stonecall</AbilityDef>
     </descriptionHyperlinks>
     <biostatMet>-3</biostatMet>
     <biostatCpx>1</biostatCpx>

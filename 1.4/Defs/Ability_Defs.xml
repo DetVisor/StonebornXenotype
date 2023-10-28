@@ -29,7 +29,7 @@
   -->
   <HediffDef>
     <hediffClass>HediffWithComps</hediffClass>
-    <defName>MightyLiverHediff</defName>
+    <defName>DV_MightyLiverHediff</defName>
     <label>mighty liver</label>
     <description>Blah blah blah.</description>
     <stages>
@@ -43,7 +43,7 @@
 
   <HediffDef>
     <hediffClass>HediffWithComps</hediffClass>
-    <defName>StonecallBuff</defName>
+    <defName>DV_StonecallBuff</defName>
     <label>stonecalled</label>
     <description>This person's construction and mining speeds are boosted thanks to having used the stonecall ability.</description>
     <stages>
@@ -63,7 +63,7 @@
   </HediffDef>
   
   <AbilityDef>
-    <defName>Stonecall</defName>
+    <defName>DV_Stonecall</defName>
     <label>stonecall</label>
     <description>With a powerful warcall, raise the mining and construction speeds of the caster.</description>
     <iconPath>Things/UI/StonecallGizmo</iconPath>
@@ -93,7 +93,7 @@
     <comps>
       <li Class = "CompProperties_AbilityGiveHediff">
         <compClass>CompAbilityEffect_GiveHediff</compClass>
-        <hediffDef>StonecallBuff</hediffDef>
+        <hediffDef>DV_StonecallBuff</hediffDef>
         <applicableToMechs>False</applicableToMechs>
       </li>
       <li Class="CompProperties_AbilityEffecterOnTarget">
