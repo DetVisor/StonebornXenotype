@@ -69,7 +69,7 @@
     <defName>DV_MightyLiver</defName>
     <label>mighty liver</label>
     <labelShortAdj>mighty liver</labelShortAdj>
-    <description>Carriers of this have bigger and faster liver, that allow them to filter alcohols and toxins better.</description>
+    <description>Carriers of this gene have a bigger and faster liver, that allows them to filter alcohols and toxins better.</description>
     <iconPath>Things/UI/MightyLiver</iconPath>
     <displayOrderInCategory>30</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
