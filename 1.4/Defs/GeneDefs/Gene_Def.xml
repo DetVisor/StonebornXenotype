@@ -2,7 +2,7 @@
 <Defs>
 
   <GeneDef ParentName="GeneHeadboneBase">
-    <defName>BushyEyebrows</defName>
+    <defName>DV_BushyEyebrows</defName>
     <label>bushy eyebrows</label>
     <description>Carriers of this gene have unnaturally thick eyebrows.</description>
     <iconPath>Things/UI/EyebrowIcon</iconPath>
@@ -35,7 +35,7 @@
   </GeneDef>
   
   <GeneDef>
-    <defName>Stonecall</defName>
+    <defName>DV_Stonecall</defName>
     <label>stonecall</label>
     <description>Carriers of this gene have a special organ hidden near their vocal chords, that allows them to perform a loud and inspiring stonecall to buff their mining and construction speeds.</description>
     <iconPath>Things/UI/StonecallGene</iconPath>
@@ -66,7 +66,21 @@
   </GeneDef>
   
   <GeneDef>
-    <defName>LifespanLong</defName>
+    <defName>DV_MightyLiver</defName>
+    <label>mighty liver</label>
+    <labelShortAdj>Long lifespan</labelShortAdj>
+    <description>Carriers of this gene life unusually long.</description>
+    <iconPath>Things/UI/LongLifespan</iconPath>
+    <displayOrderInCategory>30</displayOrderInCategory>
+    <statFactors>
+      <LifespanFactor>1.5</LifespanFactor>
+    </statFactors>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_LifespanLong</defName>
     <label>Long lifespan</label>
     <labelShortAdj>Long lifespan</labelShortAdj>
     <description>Carriers of this gene life unusually long.</description>
@@ -80,7 +94,7 @@
   </GeneDef>
   
   <GeneDef>
-    <defName>Undergrounder</defName>
+    <defName>DV_Undergrounder</defName>
     <label>Undergrounder</label>
     <labelShortAdj>Undergrounder</labelShortAdj>
     <description>Carriers of this gene are more accustomed to dwelling in caves and under mountains.</description>
@@ -96,7 +110,7 @@
   </GeneDef>
   
   <GeneDef ParentName="GeneAggressionBase">
-    <defName>Aggression_Irascible</defName>
+    <defName>DV_Aggression_Irascible</defName>
     <label>irascible</label>
     <description>Carriers of this gene are stubborn and rude. They are a bit more likely to start fights over nothing. When they have mental breaks, they are more likely to choose an aggressive kind of break.</description>
     <iconPath>Things/UI/Irascible</iconPath>
@@ -123,7 +137,7 @@
   </GeneDef>
   
   	<GeneDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" >
-		<defName>SmallBuild</defName>
+		<defName>DV_SmallBuild</defName>
 		<label>dwarfism</label>
 		<description>Carriers of this gene are afflicted by dwarfism and are shorter and stockier than most.</description>
 		<iconPath>Things/UI/SmallBody</iconPath>

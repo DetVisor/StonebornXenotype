@@ -27,12 +27,13 @@
 	  <li>PsychicAbility_Deaf</li>
 	  <li>Robust</li>
 	  <li>Libido_Low</li>
-	  <li>BushyEyebrows</li>
-	  <li>Stonecall</li>
-	  <li>LifespanLong</li>
-	  <li>Undergrounder</li>
-	  <li>Aggression_Irascible</li>
-	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">SmallBuild</li>
+	  <li>DV_BushyEyebrows</li>
+	  <li>DV_Stonecall</li>
+	  <li>DV_LifespanLong</li>
+	  <li>DV_Undergrounder</li>
+	  <li>DV_Aggression_Irascible</li>
+	  <li>DV_MightyLiver</li>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">DV_SmallBuild</li>
 	  <li MayRequire="det.sbdelights">AddictionResistant_SD_Ale</li>
     </genes>
   </XenotypeDef>
