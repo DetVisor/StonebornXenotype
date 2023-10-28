@@ -29,6 +29,20 @@
   -->
   <HediffDef>
     <hediffClass>HediffWithComps</hediffClass>
+    <defName>MightyLiverHediff</defName>
+    <label>mighty liver</label>
+    <description>Blah blah blah.</description>
+    <stages>
+      <li>
+        <makeImmuneTo>
+          <li>Cirrhosis</li>
+        </makeImmuneTo>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <hediffClass>HediffWithComps</hediffClass>
     <defName>StonecallBuff</defName>
     <label>stonecalled</label>
     <description>This person's construction and mining speeds are boosted thanks to having used the stonecall ability.</description>

@@ -7,7 +7,7 @@
     <graphicPath>Things/Pawn/Humanlike/Heads/Dwarf_Average_Normal</graphicPath>
     <gender>None</gender>
     <requiredGenes>
-        <li>BushyEyebrows</li>
+        <li>DV_BushyEyebrows</li>
     </requiredGenes>
 </HeadTypeDef>
 </Defs>
