@@ -68,13 +68,10 @@
   <GeneDef>
     <defName>DV_MightyLiver</defName>
     <label>mighty liver</label>
-    <labelShortAdj>Long lifespan</labelShortAdj>
-    <description>Carriers of this gene life unusually long.</description>
-    <iconPath>Things/UI/LongLifespan</iconPath>
+    <labelShortAdj>mighty liver</labelShortAdj>
+    <description>Carriers of this have bigger and faster liver, that allow them to filter alcohols and toxins better.</description>
+    <iconPath>Things/UI/MightyLiver</iconPath>
     <displayOrderInCategory>30</displayOrderInCategory>
-    <statFactors>
-      <LifespanFactor>1.5</LifespanFactor>
-    </statFactors>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
   </GeneDef>
