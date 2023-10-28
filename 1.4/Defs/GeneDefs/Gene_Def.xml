@@ -33,7 +33,7 @@
       </suffixSymbols>
     </symbolPack>
   </GeneDef>
-  
+
   <GeneDef>
     <defName>DV_Stonecall</defName>
     <label>stonecall</label>
@@ -64,13 +64,14 @@
       </suffixSymbols>
     </symbolPack>
   </GeneDef>
-  
+
   <GeneDef>
     <defName>DV_MightyLiver</defName>
     <label>mighty liver</label>
     <labelShortAdj>mighty liver</labelShortAdj>
     <description>Carriers of this gene have a bigger and faster liver, that allows them to filter alcohols and toxins better.</description>
     <iconPath>Things/UI/MightyLiver</iconPath>
+    <geneClass>StonebornXenotype.MightyLiverGene</geneClass>
     <displayOrderInCategory>30</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
@@ -89,7 +90,7 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
   </GeneDef>
-  
+
   <GeneDef>
     <defName>DV_Undergrounder</defName>
     <label>Undergrounder</label>
@@ -105,7 +106,7 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
   </GeneDef>
-  
+
   <GeneDef ParentName="GeneAggressionBase">
     <defName>DV_Aggression_Irascible</defName>
     <label>irascible</label>
@@ -132,7 +133,7 @@
       </suffixSymbols>
     </symbolPack>
   </GeneDef>
-  
+
   	<GeneDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" >
 		<defName>DV_SmallBuild</defName>
 		<label>dwarfism</label>
@@ -141,7 +142,7 @@
 		<exclusionTags>
 			<li>AG_BodySize</li>
 		</exclusionTags>
-    
+
 		<statFactors>
 			<Mass>0.90</Mass>
 			<MeatAmount>0.90</MeatAmount>
@@ -151,7 +152,7 @@
 		<displayOrderInCategory>0</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>0</biostatMet>
-		
+
 		<selectionWeight>0</selectionWeight>
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
@@ -160,5 +161,5 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
-  
+
 </Defs>
