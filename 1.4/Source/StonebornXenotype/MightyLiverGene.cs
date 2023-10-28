@@ -26,12 +26,12 @@ public class MightyLiverGene : Gene
         if (Rand.Chance(0.5f)) ApplyHediff();
     }
 
-    public Hediff GetHediff() => pawn.health.hediffSet.GetFirstHediffOfDef(StonebornDefOf.DV_MightyLiver);
+    public Hediff GetHediff() => pawn.health.hediffSet.GetFirstHediffOfDef(StonebornDefOf.DV_MightyLiverHediff);
 
     public void ApplyHediff()
     {
         if (GetHediff() != null || GetLiver() is not { } liver) return;
-        Hediff liverHediff = HediffMaker.MakeHediff(StonebornDefOf.DV_MightyLiver, pawn, liver);
+        Hediff liverHediff = HediffMaker.MakeHediff(StonebornDefOf.DV_MightyLiverHediff, pawn, liver);
         pawn.health.AddHediff(liverHediff);
     }
 
