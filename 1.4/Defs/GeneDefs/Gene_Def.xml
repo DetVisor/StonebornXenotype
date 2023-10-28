@@ -21,7 +21,7 @@
       </graphicPaths>
       <colorType>Hair</colorType>
       <visibleNorth>false</visibleNorth>
-      <layer>PostSkin</layer>
+      <layer>PostTattoo</layer>
       <drawOffset>(0, -0.002, 0)</drawOffset>
     </graphicData>
     <symbolPack>

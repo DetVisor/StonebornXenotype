@@ -40,7 +40,7 @@
       <li>TribeCivil</li>
       <li>PlayerTribe</li>
       <li>PlayerColony</li>
-      <li>Ancients</li>
+      <li MayRequire="oskarpotocki.vfe.vikings">VFEV_PlayerClan</li>
     </permanentEnemyToEveryoneExcept>
     <requiredMemes Inherit="False">
       <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
