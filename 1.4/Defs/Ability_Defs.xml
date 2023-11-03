@@ -31,12 +31,20 @@
     <hediffClass>HediffWithComps</hediffClass>
     <defName>DV_MightyLiverHediff</defName>
     <label>mighty liver</label>
-    <description>Blah blah blah.</description>
+    <description>An adaptation of the liver which enhances its filtering capabilities. eliminating the risk of cirrhosis.</description>
+    <maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
     <stages>
       <li>
         <makeImmuneTo>
           <li>Cirrhosis</li>
         </makeImmuneTo>
+        <capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>0.15</offset>
+          </li>
+        </capMods>
       </li>
     </stages>
   </HediffDef>

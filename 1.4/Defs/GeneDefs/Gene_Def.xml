@@ -69,19 +69,22 @@
     <defName>DV_MightyLiver</defName>
     <label>mighty liver</label>
     <labelShortAdj>mighty liver</labelShortAdj>
-    <description>Carriers of this gene have a bigger and faster liver, that allows them to filter alcohols and toxins better.</description>
+    <description>Carriers of this gene grow an exceptionally hardy liver that allows them to filter toxic chemicals in their blood better. This makes them immune to internal liver damage, namely cirrhosis.</description>
     <iconPath>Things/UI/MightyLiver</iconPath>
     <geneClass>StonebornXenotype.MightyLiverGene</geneClass>
     <displayOrderInCategory>30</displayOrderInCategory>
+    <biostatMet>-2</biostatMet>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
+    <customEffectDescriptions>
+      <li>Immune to basic liver cirrhosis.</li>
+    </customEffectDescriptions>
   </GeneDef>
 
   <GeneDef>
     <defName>DV_LifespanLong</defName>
     <label>Long lifespan</label>
     <labelShortAdj>Long lifespan</labelShortAdj>
-    <description>Carriers of this gene life unusually long.</description>
+    <description>Carriers of this gene live unusually long.</description>
     <iconPath>Things/UI/LongLifespan</iconPath>
     <displayOrderInCategory>30</displayOrderInCategory>
     <statFactors>
