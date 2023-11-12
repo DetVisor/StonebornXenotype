@@ -73,7 +73,7 @@
     <iconPath>Things/UI/MightyLiver</iconPath>
     <geneClass>StonebornXenotype.MightyLiverGene</geneClass>
     <displayOrderInCategory>30</displayOrderInCategory>
-    <biostatMet>-2</biostatMet>
+    <biostatMet>-1</biostatMet>
     <biostatCpx>1</biostatCpx>
     <customEffectDescriptions>
       <li>Immune to basic liver cirrhosis.</li>
