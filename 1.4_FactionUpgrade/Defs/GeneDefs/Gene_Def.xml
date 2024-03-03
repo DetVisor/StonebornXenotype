@@ -137,7 +137,6 @@
     </symbolPack>
   </GeneDef>
 
-  <!--
   	<GeneDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" >
 		<defName>DV_SmallBuild</defName>
 		<label>dwarfism</label>
@@ -145,8 +144,8 @@
 		<iconPath>Things/UI/SmallBody</iconPath>
 		<exclusionTags>
 			<li>AG_BodySize</li>
-			<li>Size</li>
 		</exclusionTags>
+
 		<statFactors>
 			<Mass>0.90</Mass>
 			<MeatAmount>0.90</MeatAmount>
@@ -165,7 +164,5 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
-
--->
 
 </Defs>

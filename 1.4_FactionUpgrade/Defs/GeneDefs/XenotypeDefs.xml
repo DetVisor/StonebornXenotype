@@ -33,6 +33,7 @@
 	  <li>DV_Undergrounder</li>
 	  <li>DV_Aggression_Irascible</li>
 	  <li>DV_MightyLiver</li>
+	  <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">DV_SmallBuild</li>
 	<!--<li MayRequire="det.sbdelights">AddictionResistant_SD_Ale</li>-->
     </genes>
   </XenotypeDef>

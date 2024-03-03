@@ -13,6 +13,16 @@
     <factionIconPath>Things/UI/WorldObjects/StonebornUnion</factionIconPath>
     <factionNameMaker>NamerFactionStonebornClan</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <fixedLeaderKinds>
+      <li>Stoneborn_Underlord</li>
+    </fixedLeaderKinds>
+    <baseTraderKinds>
+      <li>Base_Empire_Standard</li>
+    </baseTraderKinds>
+    <caravanTraderKinds>
+      <li>Stoneborn_Caravan_OresGeneral</li>
+      <li>Stoneborn_Caravan_ArmsDealer</li>
+    </caravanTraderKinds>
     <pawnSingular>dwarf</pawnSingular>
     <pawnsPlural>dwarves</pawnsPlural>
     <leaderTitle>underlord</leaderTitle>
@@ -27,7 +37,7 @@
       </li>
     </backstoryFilters>
     <allowedCultures>
-      <li>Rustican</li>
+      <li MayRequire="det.stonebornfaction">Grottalik</li>
     </allowedCultures>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
@@ -35,6 +45,11 @@
       </xenotypeChances>
       <warnIfTotalAbove1>false</warnIfTotalAbove1>
     </xenotypeSet>
+    <dialogFactionGreetingHostile>StonebornFactionGreetingHostile</dialogFactionGreetingHostile>
+    <dialogFactionGreetingHostileAppreciative>StonebornFactionGreetingHostileAppreciative</dialogFactionGreetingHostileAppreciative>
+    <dialogFactionGreetingWary>StonebornFactionGreetingWary</dialogFactionGreetingWary>
+    <dialogFactionGreetingWarm>StonebornFactionGreetingWarm</dialogFactionGreetingWarm>
+    <dialogMilitaryAidSent>StonebornMilitaryAidSent</dialogMilitaryAidSent>
     <permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
     <requiredMemes Inherit="False">
       <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
@@ -54,7 +69,7 @@
     <structureMemeWeights Inherit="False">
       <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">4</Structure_TheistEmbodied>
       <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">8</Structure_TheistAbstract>
-	  <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Animist>
+	    <Structure_Animist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Animist>
       <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">6</Structure_Ideological>
       <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Archist>
       <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginChristian>
@@ -75,12 +90,108 @@
         </chooseFromlayouts> 
                
       </li>
-      <li MayRequire="det.stonebornfaction" Class="StonebornExpansion.PsycastHateExtension">
-        
+
+      <li Class="StonebornExpansion.PsycastHateExtension">
+
         <goodwillPerLevel>-10</goodwillPerLevel>
                
       </li>
+      
     </modExtensions>
+
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
+
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(500, 100)</li> <!-- Can always use relatively strong pawns, because empire doesn't really have weak ones -->
+        <li>(1000, 150)</li>
+        <li>(2000, 500)</li>
+        <li>(2001, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+
+    <pawnGroupMakers Inherit="False">
+      <!-- Dorf traders -->
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Stoneborn_Merchant>1</Stoneborn_Merchant>
+        </traders>
+        <carriers>
+          <DV_Browbull>10</DV_Browbull>
+          <Muffalo>5</Muffalo>
+          <Dromedary>4</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <Stoneborn_Worker>5</Stoneborn_Worker>
+          <Stoneborn_Settler>8</Stoneborn_Settler>
+          <Stoneborn_Slayer>4</Stoneborn_Slayer>
+          <Stoneborn_Ranger>4</Stoneborn_Ranger>
+          <DV_Goreflea>4</DV_Goreflea>
+        </guards>
+      </li>
+
+      <li>
+        <!-- Normal fights -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Stoneborn_Slayer>5</Stoneborn_Slayer>
+          <Stoneborn_Menhir>2</Stoneborn_Menhir>
+          <Stoneborn_Ranger>4</Stoneborn_Ranger>
+          <DV_Goreflea>3</DV_Goreflea>
+        </options>
+      </li>
+      <li>
+        <!-- strike fights -->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <options>
+          <Stoneborn_Menhir>6</Stoneborn_Menhir>
+          <Stoneborn_Elite_Thunderer>3.5</Stoneborn_Elite_Thunderer>
+          <Stoneborn_Slayer>4</Stoneborn_Slayer>
+        </options>
+      </li>
+      <li>
+        <!-- tox extermination -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <Stoneborn_Elite_Toxwyrm>7</Stoneborn_Elite_Toxwyrm>
+          <Stoneborn_Ranger>3</Stoneborn_Ranger>
+        </options>
+      </li>
+      <li>
+        <!-- fire extermination -->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <Stoneborn_Elite_Firedrake>7</Stoneborn_Elite_Firedrake>
+          <Stoneborn_Ranger>3</Stoneborn_Ranger>
+        </options>
+      </li>
+      <li>
+        <!-- Base defense, mainly melee -->
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Stoneborn_Slayer>5</Stoneborn_Slayer>
+          <Stoneborn_Menhir>3.5</Stoneborn_Menhir>
+          <Stoneborn_Elite_Aegisbreaker>2</Stoneborn_Elite_Aegisbreaker>
+          <Stoneborn_Ranger>4</Stoneborn_Ranger>
+      </options>
+      </li>
+    </pawnGroupMakers>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>70</configurationListOrderPriority>
+    <disallowedRaidAgeRestrictions>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+    </disallowedRaidAgeRestrictions>
   </FactionDef>
 
   <RulePackDef>
