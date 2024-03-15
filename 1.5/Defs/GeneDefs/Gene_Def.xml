@@ -9,8 +9,12 @@
     <forcedHeadTypes>
       <li>Dwarf_AverageNormal</li>
     </forcedHeadTypes>
-    <graphicData>
-      <graphicPaths>
+    <renderNodeProperties>
+     <li>
+      <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+      <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+      <parentTagDef>Head</parentTagDef>
+      <texPaths>
        <li>Things/Pawn/Male_Eyebrow</li>
        <li>Things/Pawn/Male_Eyebrow1</li>
        <li>Things/Pawn/Male_Eyebrow2</li>
@@ -18,12 +22,20 @@
        <li>Things/Pawn/Male_Eyebrow4</li>
        <li>Things/Pawn/Male_Eyebrow5</li>
        <li>Things/Pawn/Male_Eyebrow6</li>
-      </graphicPaths>
+      </texPaths>
       <colorType>Hair</colorType>
-      <visibleNorth>false</visibleNorth>
-      <layer>PostTattoo</layer>
-      <drawOffset>(0, -0.002, 0)</drawOffset>
-    </graphicData>
+      <visibleFacing>
+        <li>East</li>
+        <li>South</li>
+        <li>West</li>
+      </visibleFacing>
+      <drawData>
+        <defaultData>
+          <layer>52</layer>
+        </defaultData>
+      </drawData>
+     </li>
+    </renderNodeProperties>
     <symbolPack>
       <prefixSymbols>
         <li><symbol>eyebrowed</symbol></li>
@@ -88,10 +100,10 @@
     <iconPath>Things/UI/LongLifespan</iconPath>
     <displayOrderInCategory>30</displayOrderInCategory>
     <statFactors>
-      <LifespanFactor>1.5</LifespanFactor>
+      <LifespanFactor>1.75</LifespanFactor>
     </statFactors>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
+    <biostatMet>0</biostatMet>
   </GeneDef>
 
   <GeneDef>
@@ -136,33 +148,5 @@
       </suffixSymbols>
     </symbolPack>
   </GeneDef>
-
-  	<GeneDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" >
-		<defName>DV_SmallBuild</defName>
-		<label>dwarfism</label>
-		<description>Carriers of this gene are afflicted by dwarfism and are shorter and stockier than most.</description>
-		<iconPath>Things/UI/SmallBody</iconPath>
-		<exclusionTags>
-			<li>AG_BodySize</li>
-		</exclusionTags>
-
-		<statFactors>
-			<Mass>0.90</Mass>
-			<MeatAmount>0.90</MeatAmount>
-			<LeatherAmount>0.90</LeatherAmount>
-		</statFactors>
-
-		<displayOrderInCategory>0</displayOrderInCategory>
-		<biostatCpx>1</biostatCpx>
-		<biostatMet>0</biostatMet>
-
-		<selectionWeight>0</selectionWeight>
-		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<bodyScaleFactor>(0.92,0.90)</bodyScaleFactor>
-				<headScaleFactor>(0.94,0.94)</headScaleFactor>
-			</li>
-		</modExtensions>
-	</GeneDef>
 
 </Defs>

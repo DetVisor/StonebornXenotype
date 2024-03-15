@@ -17,7 +17,7 @@
       <li>Stoneborn_Underlord</li>
     </fixedLeaderKinds>
     <baseTraderKinds>
-      <li>Base_Empire_Standard</li>
+      <li>Base_Stoneborn_Standard</li>
     </baseTraderKinds>
     <caravanTraderKinds>
       <li>Stoneborn_Caravan_OresGeneral</li>
@@ -86,7 +86,8 @@
         <tryFindFreeArea>false</tryFindFreeArea>
 
         <chooseFromlayouts>
-              <li>AlphaStronghold1</li>
+              <li>DwarvenBaseAlpha</li>
+              <li>DwarvenBaseBeta</li>
         </chooseFromlayouts> 
                
       </li>

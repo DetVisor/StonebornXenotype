@@ -33,6 +33,7 @@
 	  <li>DV_Undergrounder</li>
 	  <li>DV_Aggression_Irascible</li>
 	  <li>DV_MightyLiver</li>
+      <li MayRequire="det.vis.prodigiousbeards">DV_Beards_Prodigious</li>
 	<!--<li MayRequire="det.sbdelights">AddictionResistant_SD_Ale</li>-->
     </genes>
   </XenotypeDef>
