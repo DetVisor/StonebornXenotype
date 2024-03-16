@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <GeneDef>
+    <defName>DV_ExtendedMemory</defName>
+    <label>extended memory</label>
+    <labelShortAdj>long memory</labelShortAdj>
+    <description>Carriers of this gene have an enhanced temporal lobe. This allows them to remember both good and bad events for longer, which makes them more prone to holding grudges; it also generally lowers their rate of skill loss.</description>
+    <iconPath>Things/UI/MightyLiver</iconPath>
+    <displayOrderInCategory>30</displayOrderInCategory>
+    <biostatMet>0</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <customEffectDescriptions>
+      <li>Lowered skill loss rate and moodlet duration boosted by 25%.</li>
+    </customEffectDescriptions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_NarrowMemory</defName>
+    <label>narrow memory</label>
+    <labelShortAdj>short memory</labelShortAdj>
+    <description>Carriers of this gene have a shrunken temporal lobe. This makes events harder to recall, which makes it easier for them to forget both good and bad things; it also generally raises their rate of skill loss.</description>
+    <iconPath>Things/UI/MightyLiver</iconPath>
+    <displayOrderInCategory>30</displayOrderInCategory>
+    <biostatMet>0</biostatMet>
+    <biostatCpx>1</biostatCpx>
+    <customEffectDescriptions>
+      <li>Raised skill loss rate and moodlet duration lowered by 25%.</li>
+    </customEffectDescriptions>
+  </GeneDef>
+
+
+
   <GeneDef ParentName="GeneHeadboneBase">
     <defName>DV_BushyEyebrows</defName>
     <label>bushy eyebrows</label>
