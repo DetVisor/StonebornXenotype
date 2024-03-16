@@ -1,4 +1,5 @@
-﻿using Verse;
+﻿using HarmonyLib;
+using Verse;
 
 namespace StonebornXenotype
 {
@@ -6,6 +7,8 @@ namespace StonebornXenotype
     {
         public Mod(ModContentPack content) : base(content)
         {
+            Harmony harmony = new("det.stonebornxenotype");
+            harmony.PatchAll();
         }
     }
 }

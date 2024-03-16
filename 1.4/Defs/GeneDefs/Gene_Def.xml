@@ -13,6 +13,13 @@
     <customEffectDescriptions>
       <li>Lowered skill loss rate and moodlet duration boosted by 25%.</li>
     </customEffectDescriptions>
+    <geneClass>StonebornXenotype.StonebornMemoryGene</geneClass>
+    <modExtensions>
+      <li Class="StonebornXenotype.StonebornMemoryModExtension">
+        <skillLossFactor>0.75</skillLossFactor>
+        <thoughtDurationFactor>1.25</thoughtDurationFactor>
+      </li>
+    </modExtensions>
   </GeneDef>
 
   <GeneDef>
@@ -27,6 +34,13 @@
     <customEffectDescriptions>
       <li>Raised skill loss rate and moodlet duration lowered by 25%.</li>
     </customEffectDescriptions>
+    <geneClass>StonebornXenotype.StonebornMemoryGene</geneClass>
+    <modExtensions>
+      <li Class="StonebornXenotype.StonebornMemoryModExtension">
+        <skillLossFactor>1.25</skillLossFactor>
+        <thoughtDurationFactor>0.75</thoughtDurationFactor>
+      </li>
+    </modExtensions>
   </GeneDef>
 
 
