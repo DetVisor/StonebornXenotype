@@ -5,8 +5,8 @@
     <defName>Stoneborn</defName>
     <label>stoneborn</label>
     <description>After the hardy, grayskinned dirtmoles, came the stoneborn. Ever-bearded and short, they mine and forge minerals with a passion few can top, and are able to raise a bastion or core a mountain in a manner of days. Their relationship with rocks and caves comes at the detriment of agriculture, though. And coming from a culture where indecision can lead to death by tunnel collapse, their social interactions are seen as snobbish and rude.\n\nBut in the passages where the insectoids lay claim, the stoneborne reign with their tunnel fortresses, bearing fierce strength and complex engineering.</description>
-    <descriptionShort>After the hardy, grayskinned dirtmoles, came the stoneborn. Ever-bearded and short, they mine and forge minerals with a passion few can top, and are able to raise a bastion or core a mountain in a manner of days. Their relationship with rocks and caves comes at the detriment of agriculture, though. And coming from a culture where indecision can lead to death by tunnel collapse, their social interactions are seen as snobbish and rude.</descriptionShort>
-    <iconPath>Things/UI/XenoIcon</iconPath>
+    <descriptionShort>Short, stout and angry, the Stoneborn are highly capable miners and builders used to the deep dank caves. They have naturally bad eyesight and are quite easy to anger. They can perform a loud stonecall to boost their mining and building for a short while, and have naturally longer lifespans. Thanks to their stronger liver they are immune to liver cirrhosis, and can drink as much as they desire.</descriptionShort>
+    <iconPath>UI/Xenotypes/Stoneborn</iconPath>
     <inheritable>true</inheritable>
 	<nameMaker>NamerPersonStoneborn</nameMaker>
     <chanceToUseNameMaker>1</chanceToUseNameMaker>
@@ -33,8 +33,7 @@
 	  <li>DV_Undergrounder</li>
 	  <li>DV_Aggression_Irascible</li>
 	  <li>DV_MightyLiver</li>
-      <li MayRequire="det.vis.prodigiousbeards">DV_Beards_Prodigious</li>
-	<!--<li MayRequire="det.sbdelights">AddictionResistant_SD_Ale</li>-->
+	  <li>DV_ExtendedMemory</li>
     </genes>
   </XenotypeDef>
 

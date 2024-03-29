@@ -14,7 +14,7 @@
                     		<defName>DV_SmallBuild</defName>
                     		<label>dwarfism</label>
                     		<description>Carriers of this gene are afflicted by dwarfism and are shorter and stockier than most.</description>
-                       		<iconPath>Things/UI/SmallBody</iconPath>
+                       		<iconPath>UI/Genes/Gene_Dwarfism</iconPath>
                                <exclusionTags>
                                 <li>AG_BodySize</li>
                                 <li>Size</li>
