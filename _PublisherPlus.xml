@@ -2,6 +2,8 @@
 <Configuration>
   <Excluded>
     <exclude>.git</exclude>
-    <exclude>Previews</exclude>
+    <exclude>1.4\Source</exclude>
+    <exclude>1.5\Source</exclude>
+    <exclude>Preview</exclude>
   </Excluded>
 </Configuration>
