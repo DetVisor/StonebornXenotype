@@ -14,9 +14,9 @@ public class StonebornMemoryGene : Gene
     public float GetSkillLossFactor() => modExtension?.skillLossFactor ?? 1f;
     public float ThoughtDurationFactor() => modExtension?.thoughtDurationFactor ?? 1f;
 
-    public static float GetSkillLossFactorForPawn(Pawn pawn) => SkillLossFactors.TryGetValue(pawn.thingIDNumber, 1f);
+    public static float GetSkillLossFactorForPawn(Pawn pawn) => pawn != null ? SkillLossFactors.TryGetValue(pawn.thingIDNumber, 1f) : 1f;
 
-    public static float GetThoughtDurationFactorForPawn(Pawn pawn) => ThoughtDurationFactors.TryGetValue(pawn.thingIDNumber, 1f);
+    public static float GetThoughtDurationFactorForPawn(Pawn pawn) => pawn != null ? ThoughtDurationFactors.TryGetValue(pawn.thingIDNumber, 1f) : 1f;
 
     public override void ExposeData()
     {
