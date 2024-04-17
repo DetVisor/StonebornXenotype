@@ -37,13 +37,12 @@
       </li>
     </backstoryFilters>
     <allowedCultures>
-      <li MayRequire="det.stonebornfaction">Grottalik</li>
+      <li>Grottalik</li>
     </allowedCultures>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <Stoneborn>100</Stoneborn>
       </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
     </xenotypeSet>
     <dialogFactionGreetingHostile>StonebornFactionGreetingHostile</dialogFactionGreetingHostile>
     <dialogFactionGreetingHostileAppreciative>StonebornFactionGreetingHostileAppreciative</dialogFactionGreetingHostileAppreciative>

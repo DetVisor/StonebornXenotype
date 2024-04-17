@@ -1,12 +1,8 @@
 <loadFolders>
-	<v1.4>
-		<li>/</li>
-		<li>1.4</li>
-		<li IfModActive="det.stonebornfaction">1.4/FactionLoader/WithExpansion</li>	
-		<li IfModNotActive="det.stonebornfaction">1.4/FactionLoader/NoExpansion</li>	
-	</v1.4>
 	<v1.5>
 		<li>/</li>
-		<li>1.5</li>		
+		<li>1.5</li>
+		<li IfModActive="det.stonebornfaction">1.5/FactionLoader/WithExpansion</li>	
+		<li IfModNotActive="det.stonebornfaction">1.5/FactionLoader/NoExpansion</li>			
 	</v1.5>
 </loadFolders>

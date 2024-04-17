@@ -23,17 +23,13 @@
                 			    <Mass>0.90</Mass>
                                 <MeatAmount>0.80</MeatAmount>
                                 <LeatherAmount>0.80</LeatherAmount>
+								<VEF_CosmeticBodySize_Multiplier>0.85</VEF_CosmeticBodySize_Multiplier>
+								<VEF_HeadSize_Cosmetic>0.90</VEF_HeadSize_Cosmetic>
                  		    </statFactors>
                  		    <displayOrderInCategory>0</displayOrderInCategory>
                 		    <biostatCpx>1</biostatCpx>
                  		    <biostatMet>0</biostatMet>		
                 		    <selectionWeight>0</selectionWeight>
-                 		    <modExtensions>
-			                    <li Class="VanillaGenesExpanded.GeneExtension">
-				                    <bodyScaleFactor>(0.85,0.85)</bodyScaleFactor>
-				                    <headScaleFactor>(0.90,0.90)</headScaleFactor>
-			                    </li>
-		                    </modExtensions>
 	                    </GeneDef>
 					</value>
 				</li>
