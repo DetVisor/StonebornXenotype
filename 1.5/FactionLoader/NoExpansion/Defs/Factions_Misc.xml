@@ -33,7 +33,6 @@
       <xenotypeChances>
         <Stoneborn>100</Stoneborn>
       </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
     </xenotypeSet>
     <permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
     <requiredMemes Inherit="False">
@@ -63,24 +62,6 @@
       <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
     </structureMemeWeights>
 
-    <modExtensions>
-      <li MayRequire="det.stonebornfaction" Class="KCSG.CustomGenOption">
-
-        <fullClear>true</fullClear>     
-        <preventBridgeable>true</preventBridgeable>
-        <tryFindFreeArea>false</tryFindFreeArea>
-
-        <chooseFromlayouts>
-              <li>AlphaStronghold1</li>
-        </chooseFromlayouts> 
-               
-      </li>
-      <li MayRequire="det.stonebornfaction" Class="StonebornExpansion.PsycastHateExtension">
-        
-        <goodwillPerLevel>-10</goodwillPerLevel>
-               
-      </li>
-    </modExtensions>
   </FactionDef>
 
   <RulePackDef>
