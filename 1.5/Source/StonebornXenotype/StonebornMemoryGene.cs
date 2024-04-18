@@ -21,8 +21,9 @@ public class StonebornMemoryGene : Gene
     public override void ExposeData()
     {
         base.ExposeData();
-        if (modExtension != null || (Scribe.mode != LoadSaveMode.LoadingVars && Scribe.mode != LoadSaveMode.PostLoadInit)) return;
+        if (modExtension != null || (Scribe.mode != LoadSaveMode.ResolvingCrossRefs && Scribe.mode != LoadSaveMode.PostLoadInit)) return;
         modExtension = def.GetModExtension<StonebornMemoryModExtension>();
+        if (modExtension == null) return;
         Init();
     }
 
