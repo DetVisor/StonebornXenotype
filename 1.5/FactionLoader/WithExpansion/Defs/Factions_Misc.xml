@@ -138,6 +138,16 @@
       </li>
 
       <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <Stoneborn_Settler>20</Stoneborn_Settler>
+          <Stoneborn_Worker>10</Stoneborn_Worker>
+          <Stoneborn_Slayer>8</Stoneborn_Slayer>
+          <Stoneborn_Ranger>8</Stoneborn_Ranger>
+        </options>
+      </li>
+
+      <li>
         <!-- Normal fights -->
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
