@@ -81,6 +81,8 @@
     <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
     <jobDef>CastAbilityOnThing</jobDef>
 	<targetRequired>False</targetRequired>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <statBases>
       <Ability_Duration>500</Ability_Duration>
     </statBases>
