@@ -5,4 +5,10 @@
 		<li IfModActive="det.stonebornfaction">1.5/FactionLoader/WithExpansion</li>	
 		<li IfModNotActive="det.stonebornfaction">1.5/FactionLoader/NoExpansion</li>			
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="det.stonebornfaction">1.6/FactionLoader/WithExpansion</li>	
+		<li IfModNotActive="det.stonebornfaction">1.6/FactionLoader/NoExpansion</li>			
+	</v1.6>
 </loadFolders>
