@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RulePackDef>
+        <defName>NamerPersonStoneborn</defName>
+        <rulePack>
+            <include>
+                <li>NamerFirstnamesStoneborn</li>
+                <li>NamerLastNamesStoneborn</li>
+            </include>
+            <rulesStrings>
+                <li>r_name->[firstName] [lastName]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+      <RulePackDef>
+        <defName>NamerFirstnamesStoneborn</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+
+                <li>firstNamePrefix->tho</li>
+                <li>firstNamePrefix->tha</li>
+                <li>firstNamePrefix->bi</li>
+                <li>firstNamePrefix->bom</li>
+                <li>firstNamePrefix->ast</li>
+                <li>firstNamePrefix->at</li>
+                <li>firstNamePrefix->ar</li>
+                <li>firstNamePrefix->am</li>
+                <li>firstNamePrefix->as</li>
+                <li>firstNamePrefix->ash</li>
+                <li>firstNamePrefix->do</li>
+                <li>firstNamePrefix->dor</li>
+                <li>firstNamePrefix->doh</li>
+                <li>firstNamePrefix->thor</li>
+                <li>firstNamePrefix->dum</li>
+                <li>firstNamePrefix->du</li>
+                <li>firstNamePrefix->dr</li>
+                <li>firstNamePrefix->ed</li>
+                <li>firstNamePrefix->er</li>
+                <li>firstNamePrefix->et</li>
+                <li>firstNamePrefix->go</li>
+                <li>firstNamePrefix->god</li>
+                <li>firstNamePrefix->gid</li>
+                <li>firstNamePrefix->in</li>
+                <li>firstNamePrefix->ing</li>
+                <li>firstNamePrefix->li</li>
+                <li>firstNamePrefix->led</li>
+                <li>firstNamePrefix->lim</li>
+                <li>firstNamePrefix->me</li>
+                <li>firstNamePrefix->mo</li>
+                <li>firstNamePrefix->mob</li>
+                <li>firstNamePrefix->molf</li>
+                <li>firstNamePrefix->vor</li>
+                <li>firstNamePrefix->von</li>
+                <li>firstNamePrefix->mog</li>
+                <li>firstNamePrefix->morg</li>
+                <li>firstNamePrefix->ger</li>
+                <li>firstNamePrefix->urg</li>
+                <li>firstNamePrefix->ulf</li>
+                <li>firstNamePrefix->bel</li>
+
+                <li>firstNameSuffix->al</li>
+                <li>firstNameSuffix->dil</li>
+                <li>firstNameSuffix->in</li>
+                <li>firstNameSuffix->rin</li>
+                <li>firstNameSuffix->tis</li>
+                <li>firstNameSuffix->tir</li>
+                <li>firstNameSuffix->is</li>
+                <li>firstNameSuffix->ir</li>
+                <li>firstNameSuffix->uz</li>
+                <li>firstNameSuffix->er</li>
+                <li>firstNameSuffix->mar</li>
+                <li>firstNameSuffix->og</li>
+                <li>firstNameSuffix->ob</li>
+                <li>firstNameSuffix->ol</li>
+                <li>firstNameSuffix->ot</li>
+                <li>firstNameSuffix->oi</li>
+                <li>firstNameSuffix->ost</li>
+                <li>firstNameSuffix->mat</li>
+                <li>firstNameSuffix->meb</li>
+                <li>firstNameSuffix->al</li>
+                <li>firstNameSuffix->eb</li>
+                <li>firstNameSuffix->hud</li>
+                <li>firstNameSuffix->zol</li>
+                <li>firstNameSuffix->ush</li>
+                <li>firstNameSuffix->thos</li>
+                <li>firstNameSuffix->koth</li>
+                <li>firstNameSuffix->dam</li>
+                <li>firstNameSuffix->dem</li>
+                <li>firstNameSuffix->jorn</li>
+                <li>firstNameSuffix->son</li>
+                <li>firstNameSuffix->rok</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+      <RulePackDef>
+        <defName>NamerLastNamesStoneborn</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>lastName->[lastNamePrefix][lastNameSuffix]</li>
+
+                <li>lastNamePrefix->silver</li>
+                <li>lastNamePrefix->coal</li>
+                <li>lastNamePrefix->iron</li>
+                <li>lastNamePrefix->lead</li>
+                <li>lastNamePrefix->gold</li>
+                <li>lastNamePrefix->steel</li>
+                <li>lastNamePrefix->rock</li>
+                <li>lastNamePrefix->stone</li>
+                <li>lastNamePrefix->mountain</li>
+                <li>lastNamePrefix->cave</li>
+                <li>lastNamePrefix->hearth</li>
+                <li>lastNamePrefix->hall</li>
+                <li>lastNamePrefix->horn</li>
+                <li>lastNamePrefix->anvil</li>
+                <li>lastNamePrefix->ale</li>
+                <li>lastNamePrefix->mead</li>
+                <li>lastNamePrefix->beer</li>
+                <li>lastNamePrefix->grog</li>
+                <li>lastNamePrefix->booze</li>
+                <li>lastNamePrefix->drunken</li>
+                <li>lastNamePrefix->bright</li>
+                <li>lastNamePrefix->black</li>
+                <li>lastNamePrefix->red</li>
+                <li>lastNamePrefix->grey</li>
+                <li>lastNamePrefix->white</li>
+                <li>lastNamePrefix->dark</li>
+                <li>lastNamePrefix->deep</li>
+                <li>lastNamePrefix->true</li>
+                <li>lastNamePrefix->grand</li>
+                <li>lastNamePrefix->gravel</li>
+                <li>lastNamePrefix->sturdy</li>
+                <li>lastNamePrefix->stout</li>
+                <li>lastNamePrefix->rough</li>
+                <li>lastNamePrefix->strong</li>
+                <li>lastNamePrefix->great</li>
+                <li>lastNamePrefix->ore</li>
+                <li>lastNamePrefix->clay</li>
+                <li>lastNameSuffix->metal</li>
+
+                <li>lastNameSuffix->forge</li>
+                <li>lastNameSuffix->banner</li>
+                <li>lastNameSuffix->pride</li>
+                <li>lastNameSuffix->breaker</li>
+                <li>lastNameSuffix->splitter</li>
+                <li>lastNameSuffix->rune</li>
+                <li>lastNameSuffix->mine</li>
+                <li>lastNameSuffix->tunnel</li>
+                <li>lastNameSuffix->ship</li>
+                <li>lastNameSuffix->quake</li>
+                <li>lastNameSuffix->vault</li>
+                <li>lastNameSuffix->hill</li>
+                <li>lastNameSuffix->quarry</li>
+                <li>lastNameSuffix->hammer</li>
+                <li>lastNameSuffix->keg</li>
+                <li>lastNameSuffix->pillar</li>
+                <li>lastNameSuffix->shield</li>
+                <li>lastNameSuffix->smith</li>
+                <li>lastNameSuffix->gate</li>
+                <li>lastNameSuffix->axe</li>
+                <li>lastNameSuffix->blade</li>
+                <li>lastNameSuffix->arm</li>
+                <li>lastNameSuffix->tooth</li>
+                <li>lastNameSuffix->foot</li>
+                <li>lastNameSuffix->skin</li>
+                <li>lastNameSuffix->heart</li>
+                <li>lastNameSuffix->hand</li>
+                <li>lastNameSuffix->finger</li>
+                <li>lastNameSuffix->tongue</li>
+                <li>lastNameSuffix->beard</li>
+                <li>lastNameSuffix->fell</li>
+                <li>lastNameSuffix->helm</li>
+                <li>lastNameSuffix->kin</li>
+                <li>lastNameSuffix->spirit</li>
+                <li>lastNameSuffix->root</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+<!--
+<RulePackDef>
+    <defName>NamerLastNamesStoneborn</defName>
+    <rulePack>
+        <rulesStrings>
+            <li>lastName(p=3)->[material][place]</li>
+
+            <li>lastName(p=2)->[material][weapon]</li>
+            <li>lastName(p=2)->[color][weapon]</li>
+            <li>lastName(p=2)->[adjective][material]</li>
+
+            <li>lastName(p=2)->[age][place]</li>
+            <li>lastName(p=2)->[age][object]</li>
+
+            <li>lastName(p=2)->[object][spiritual]</li>
+            <li>lastName(p=2)->[adjective][object]</li>
+
+            <li>lastName(p=1)->[material][bodyPart]</li>
+            
+
+            <li>material->silver</li>
+            <li>material->jade</li>
+            <li>material->coal</li>
+            <li>material->iron</li>
+            <li>material->lead</li>
+            <li>material->gold</li>
+            <li>material->steel</li>
+            <li>material->rock</li>
+            <li>material->stone</li>
+            <li>material->gravel</li>
+            <li>material->ore</li>
+            <li>material->metal</li>
+
+            <li>place->mountain</li>
+            <li>place->cave</li>
+            <li>place->hall</li>
+            <li>place->mine</li>
+            <li>place->cavern</li>
+            <li>place->hill</li>
+            <li>place->quarry</li>
+            <li>place->forge</li>
+            <li>place->smith</li>
+        
+            <li>object->hearth</li>
+            <li>object->horn</li>
+            <li>object->anvil</li>
+            <li>object->banner</li>
+            <li>object->pillar</li>
+            <li>object->helm</li>
+            <li>object->gate</li>
+            <li>object->rune</li>
+            <li>object->keg</li>
+
+            <li>weapon->hammer</li>
+            <li>weapon->shield</li>
+            <li>weapon->axe</li>
+            <li>weapon->spear</li>
+            <li>weapon->sword</li>
+            <li>weapon->blade</li>
+
+            <li>alcohol->ale</li>
+            <li>alcohol->mead</li>
+            <li>alcohol->beer</li>
+            <li>alcohol->grog</li>
+            <li>alcohol->booze</li>
+
+            <li>adjective->true</li>
+            <li>adjective->bright</li>
+            <li>adjective->grand</li>
+            <li>adjective->deep</li>
+            <li>adjective->sturdy</li>
+            <li>adjective->stout</li>
+            <li>adjective->rough</li>
+            <li>adjective->strong</li>
+            <li>adjective->great</li>
+            
+            <li>color->black</li>
+            <li>color->grey</li>
+            <li>color->red</li>
+            <li>color->brown</li>
+            <li>color->white</li>
+            <li>color->dark</li>
+
+            <li>filler->quake</li>
+            <li>filler->fell</li>
+
+            <li>spiritual->kin</li>
+            <li>spiritual->spirit</li>
+            <li>spiritual->root</li>
+            <li>spiritual->pride</li>
+
+            <li>age->first</li>
+            <li>age->old</li>
+            <li>age->ancient</li>
+
+            <li>bodyPart->tooth</li>
+            <li>bodyPart->foot</li>
+            <li>bodyPart->heart</li>
+            <li>bodyPart->liver</li>
+            <li>bodyPart->arm</li>
+            <li>bodyPart->hand</li>
+            <li>bodyPart->finger</li>
+            <li>bodyPart->tongue</li>
+            <li>bodyPart->beard</li>
+            <li>bodyPart->skin</li>
+            <li>bodyPart->eye</li>
+
+        </rulesStrings>
+    </rulePack>
+</RulePackDef>
+-->
+    <RulePackDef>
+        <defName>NamerNicknamesStoneborn</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>nickName->hammer</li>
+                <li>nickName->axe</li>
+                <li>nickName->mallet</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>
