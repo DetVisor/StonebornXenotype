@@ -19,6 +19,49 @@
             <rulesStrings>
                 <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
 
+                <li>firstNamePrefix->zir</li> <!-- 82 prefixes-->
+                <li>firstNamePrefix->zig</li>
+                <li>firstNamePrefix->zel</li>
+                <li>firstNamePrefix->ygg</li>
+                <li>firstNamePrefix->wyr</li>
+                <li>firstNamePrefix->thik</li>
+                <li>firstNamePrefix->tahf</li>
+                <li>firstNamePrefix->snor</li>
+                <li>firstNamePrefix->sner</li>
+                <li>firstNamePrefix->rhun</li>
+                <li>firstNamePrefix->ok</li>
+                <li>firstNamePrefix->grund</li>
+                <li>firstNamePrefix->grug</li>
+                <li>firstNamePrefix->grong</li>
+                <li>firstNamePrefix->grim</li>
+                <li>firstNamePrefix->gath</li>
+                <li>firstNamePrefix->gam</li>
+                <li>firstNamePrefix->kwit</li>
+                <li>firstNamePrefix->kvit</li>
+                <li>firstNamePrefix->konn</li>
+                <li>firstNamePrefix->klad</li>
+                <li>firstNamePrefix->khuz</li>
+                <li>firstNamePrefix->kheld</li>
+                <li>firstNamePrefix->khag</li>
+                <li>firstNamePrefix->kanut</li>
+                <li>firstNamePrefix->jorm</li>
+                <li>firstNamePrefix->jarl</li>
+                <li>firstNamePrefix->irk</li>
+                <li>firstNamePrefix->hjeim</li>
+                <li>firstNamePrefix->ek</li>
+                <li>firstNamePrefix->dreug</li>
+                <li>firstNamePrefix->dreng</li>
+                <li>firstNamePrefix->bruk</li>
+                <li>firstNamePrefix->bryn</li>
+                <li>firstNamePrefix->branz</li>
+                <li>firstNamePrefix->aza</li>
+                <li>firstNamePrefix->arken</li>
+                <li>firstNamePrefix->anzar</li>
+                <li>firstNamePrefix->ang</li>
+                <li>firstNamePrefix->akhr</li>
+                <li>firstNamePrefix->agr</li>
+                <li>firstNamePrefix->aeg</li>
+                
                 <li>firstNamePrefix->tho</li>
                 <li>firstNamePrefix->tha</li>
                 <li>firstNamePrefix->bi</li>
@@ -59,6 +102,32 @@
                 <li>firstNamePrefix->urg</li>
                 <li>firstNamePrefix->ulf</li>
                 <li>firstNamePrefix->bel</li>
+
+                <li>firstNameSuffix->zud</li> <!-- 56 suffixes -->
+                <li>firstNameSuffix->zharr</li>
+                <li>firstNameSuffix->znat</li>
+                <li>firstNameSuffix->zarr</li>
+                <li>firstNameSuffix->vi</li>
+                <li>firstNameSuffix->wald</li>
+                <li>firstNameSuffix->vald</li>
+                <li>firstNameSuffix->thi</li>
+                <li>firstNameSuffix->targ</li>
+                <li>firstNameSuffix->thark</li>
+                <li>firstNameSuffix->skwi</li>
+                <li>firstNameSuffix->sk</li>
+                <li>firstNameSuffix->rugn</li>
+                <li>firstNameSuffix->reg</li>
+                <li>firstNameSuffix->onk</li>
+                <li>firstNameSuffix->mlek</li>
+                <li>firstNameSuffix->maki</li>
+                <li>firstNameSuffix->lok</li>
+                <li>firstNameSuffix->karaz</li>
+                <li>firstNameSuffix->kazad</li>
+                <li>firstNameSuffix->jaz</li>
+                <li>firstNameSuffix->bur</li>
+                <li>firstNameSuffix->bui</li>
+                <li>firstNameSuffix->bezki</li>
+                <li>firstNameSuffix->bad</li>
 
                 <li>firstNameSuffix->al</li>
                 <li>firstNameSuffix->dil</li>

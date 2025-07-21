@@ -27,6 +27,5 @@
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
 	<packageId>det.stoneborn</packageId>
-	<modIconPath IgnoreIfNoMatchingField="True">UI/Xenotypes/Stoneborn</modIconPath>
 	<description>This mod expands on the several new xenotypes added by the Biotech DLC, adding the dwarf-like stoneborn, a race of burly and short-tempered miners.</description>
 </ModMetaData>
