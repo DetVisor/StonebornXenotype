@@ -13,7 +13,7 @@ public static class ThoughtDurationHarmonyPatch
     }
 }
 
-[HarmonyPatch(typeof(Thought_Memory), nameof(Thought.DurationTicks), MethodType.Getter)]
+[HarmonyPatch(typeof(Thought_Memory), nameof(Thought_Memory.DurationTicks), MethodType.Getter)]
 public static class ThoughtMemoryDurationHarmonyPatch
 {
     [HarmonyPostfix]
