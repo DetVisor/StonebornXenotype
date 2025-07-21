@@ -31,7 +31,7 @@
     </allowedCultures>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
-        <Stoneborn>100</Stoneborn>
+        <Stoneborn>1</Stoneborn>
       </xenotypeChances>
     </xenotypeSet>
     <permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
