@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<HeadTypeDef ParentName="AverageBase">
+    <defName>Dwarf_AverageNormal</defName>
+    <randomChosen>false</randomChosen>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Dwarf_Average_Normal</graphicPath>
+    <gender>None</gender>
+    <requiredGenes>
+        <li>DV_BushyEyebrows</li>
+    </requiredGenes>
+</HeadTypeDef>
+</Defs>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!--
+  <HediffDef ParentName="DiseaseBase">
+	<defName>Stoneskin</defName>
+    <label>stoneskin</label>
+    <labelNoun>stoneskin</labelNoun>
+    <description>test</description>
+	<isBad>false</isBad>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>2500~5000</disappearsAfterTicks>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painOffset>-0.2</painOffset>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.5</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  -->
+  <HediffDef>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defName>DV_MightyLiverHediff</defName>
+    <label>mighty liver</label>
+    <description>An adaptation of the liver which enhances its filtering capabilities. eliminating the risk of cirrhosis.</description>
+    <maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+    <stages>
+      <li>
+        <makeImmuneTo>
+          <li>Cirrhosis</li>
+        </makeImmuneTo>
+        <capMods>
+          <li>
+            <capacity>BloodFiltration</capacity>
+            <offset>0.15</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <HediffDef>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defName>DV_StonecallBuff</defName>
+    <label>stonecalled</label>
+    <description>This person's construction and mining speeds are boosted thanks to having used the stonecall ability.</description>
+    <stages>
+      <li>
+        <statOffsets>
+          <ConstructionSpeed>0.3</ConstructionSpeed>
+          <MiningSpeed>0.3</MiningSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+	<comps>
+	  <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>35000</disappearsAfterTicks><!--How long the buffs last-->
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+	</comps>
+  </HediffDef>
+  
+  <AbilityDef>
+    <defName>DV_Stonecall</defName>
+    <label>stonecall</label>
+    <description>With a powerful warcall, raise the mining and construction speeds of the caster.</description>
+    <iconPath>Things/UI/StonecallGizmo</iconPath>
+	<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+	<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <cooldownTicksRange>360000</cooldownTicksRange><!--The cooldown of the ability -->
+    <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
+    <jobDef>CastAbilityOnThing</jobDef>
+	<targetRequired>False</targetRequired>
+    <statBases>
+      <Ability_Duration>500</Ability_Duration>
+    </statBases>
+    <charges>1</charges>
+    <cooldownPerCharge>true</cooldownPerCharge>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <label>warcall</label>
+      <warmupTime>2</warmupTime>
+      <range>-1</range>
+      <drawAimPie>false</drawAimPie>      
+      <requireLineOfSight>false</requireLineOfSight>
+      <warmupEffecter>Stonecall_Warmup</warmupEffecter>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class = "CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>DV_StonecallBuff</hediffDef>
+        <applicableToMechs>False</applicableToMechs>
+      </li>
+      <li Class="CompProperties_AbilityEffecterOnTarget">
+        <effecterDef>Stonecall_Cast</effecterDef>
+        <maintainForTicks>60</maintainForTicks>
+        <scale>1.55</scale>
+      </li>
+	  
+	  <!--
+	  <li Class="CompProperties_AbilityGiveInspiration">
+        <canTargetBaby>False</canTargetBaby>
+      </li>
+	  -->
+    </comps>
+  </AbilityDef>
+  
+
+
+  
+</Defs>
