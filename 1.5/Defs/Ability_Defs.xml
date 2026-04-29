@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
- <!--
+  <!--
   <HediffDef ParentName="DiseaseBase">
 	<defName>Stoneskin</defName>
     <label>stoneskin</label>
@@ -33,7 +33,7 @@
     <label>mighty liver</label>
     <description>An adaptation of the liver which enhances its filtering capabilities. eliminating the risk of cirrhosis.</description>
     <maxSeverity>1.0</maxSeverity>
-		<isBad>false</isBad>
+    <isBad>false</isBad>
     <stages>
       <li>
         <makeImmuneTo>
@@ -62,25 +62,26 @@
         </statOffsets>
       </li>
     </stages>
-	<comps>
-	  <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>35000</disappearsAfterTicks><!--How long the buffs last-->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>35000</disappearsAfterTicks>        <!--How long the buffs last-->
         <showRemainingTime>True</showRemainingTime>
       </li>
-	</comps>
+    </comps>
   </HediffDef>
-  
+
   <AbilityDef>
     <defName>DV_Stonecall</defName>
     <label>stonecall</label>
     <description>With a powerful warcall, raise the mining and construction speeds of the caster.</description>
     <iconPath>Things/UI/StonecallGizmo</iconPath>
-	<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-	<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-    <cooldownTicksRange>360000</cooldownTicksRange><!--The cooldown of the ability -->
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <cooldownTicksRange>360000</cooldownTicksRange>    <!--The cooldown of the ability -->
     <canUseAoeToGetTargets>false</canUseAoeToGetTargets>
     <jobDef>CastAbilityOnThing</jobDef>
-	<targetRequired>False</targetRequired>
+    <targetRequired>False</targetRequired>
+    <aiCanUse>true</aiCanUse>
     <statBases>
       <Ability_Duration>500</Ability_Duration>
     </statBases>
@@ -91,7 +92,7 @@
       <label>warcall</label>
       <warmupTime>2</warmupTime>
       <range>-1</range>
-      <drawAimPie>false</drawAimPie>      
+      <drawAimPie>false</drawAimPie>
       <requireLineOfSight>false</requireLineOfSight>
       <warmupEffecter>Stonecall_Warmup</warmupEffecter>
       <targetParams>
@@ -109,16 +110,16 @@
         <maintainForTicks>60</maintainForTicks>
         <scale>1.55</scale>
       </li>
-	  
-	  <!--
+
+      <!--
 	  <li Class="CompProperties_AbilityGiveInspiration">
         <canTargetBaby>False</canTargetBaby>
       </li>
 	  -->
     </comps>
   </AbilityDef>
-  
 
 
-  
+
+
 </Defs>

@@ -4,6 +4,11 @@
     <exclude>.git</exclude>
     <exclude>1.4\Source</exclude>
     <exclude>1.5\Source</exclude>
+    <exclude>About\img1.png</exclude>
+    <exclude>About\img2.png</exclude>
+    <exclude>About\img3.png</exclude>
+    <exclude>About\img4.png</exclude>
     <exclude>Preview</exclude>
+    <exclude>README.md</exclude>
   </Excluded>
 </Configuration>
